@@ -91,4 +91,31 @@ public class BasicSortingTest {
             assertEquals(new Integer(i+1),array[i].getValue());
         }
     }
+
+    @Test
+    public void shellSortSortedTest() {
+        Element<Integer>[] array = UtilTest.createSortedArray(SIZE_ARRAY);
+        BasicSorting.shellSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void shellSortInvertedTest() {
+        Element<Integer>[] array = UtilTest.createInvertedArray(SIZE_ARRAY);
+        BasicSorting.shellSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void shellSortRandomTest() {
+        Element<Integer>[] array = UtilTest.createRandomArray(SIZE_ARRAY);
+        BasicSorting.shellSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
 }

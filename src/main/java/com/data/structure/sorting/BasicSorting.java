@@ -42,6 +42,21 @@ public class BasicSorting {
         }
     }
 
+    public static void shellSort(Element array[])
+    {
+        // Start with a big gap, then reduce the gap
+        for (int gap = array.length/2; gap > 0; gap = gap/2) {
+            for (int i = gap; i < array.length; i++) {
+                Element temp = array[i];
+                int j;
+                for (j = i; j >= gap && array[j - gap].isHigherThan(temp.getValue()); j = j - gap) {
+                    array[j] = array[j - gap];
+                }
+                array[j] = temp;
+            }
+        }
+    }
+
     private static void swap(Element[] array, int i, int j) {
         Element temp = array[i];
         array[i] = array[j];
