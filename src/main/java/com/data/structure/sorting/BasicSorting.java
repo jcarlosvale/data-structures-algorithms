@@ -2,7 +2,7 @@ package com.data.structure.sorting;
 
 import com.data.structure.general.Element;
 
-public class Sorting {
+public class BasicSorting {
 
     public static void bubbleSort(Element array[]) {
         int length = array.length;
