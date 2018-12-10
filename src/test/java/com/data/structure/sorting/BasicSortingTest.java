@@ -1,9 +1,8 @@
 package com.data.structure.sorting;
 
+import com.data.structure.UtilTest;
 import com.data.structure.general.*;
 import org.junit.Test;
-
-import java.util.*;
 
 import static org.junit.Assert.*;
 

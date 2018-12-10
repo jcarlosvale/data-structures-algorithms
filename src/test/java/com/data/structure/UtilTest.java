@@ -1,4 +1,4 @@
-package com.data.structure.sorting;
+package com.data.structure;
 
 import com.data.structure.general.Element;
 
