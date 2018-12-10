@@ -38,6 +38,60 @@ public class SortingTest {
         }
     }
 
+    @Test
+    public void insertionSortSortedTest() {
+        Element<Integer>[] array = createSortedArray(SIZE_ARRAY);
+        Sorting.insertionSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void insertionSortInvertedTest() {
+        Element<Integer>[] array = createInvertedArray(SIZE_ARRAY);
+        Sorting.insertionSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void insertionSortRandomTest() {
+        Element<Integer>[] array = createRandomArray(SIZE_ARRAY);
+        Sorting.insertionSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void selectionSortSortedTest() {
+        Element<Integer>[] array = createSortedArray(SIZE_ARRAY);
+        Sorting.selectionSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void selectionSortInvertedTest() {
+        Element<Integer>[] array = createInvertedArray(SIZE_ARRAY);
+        Sorting.selectionSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
+    @Test
+    public void selectionSortRandomTest() {
+        Element<Integer>[] array = createRandomArray(SIZE_ARRAY);
+        Sorting.selectionSort(array);
+        for (int i=0; i<SIZE_ARRAY; i++) {
+            assertEquals(new Integer(i+1),array[i].getValue());
+        }
+    }
+
     private Element<Integer>[] createRandomArray(int n) {
         List<Integer> list = new ArrayList<>();
         for (int i=1; i<n+1; i++) {
