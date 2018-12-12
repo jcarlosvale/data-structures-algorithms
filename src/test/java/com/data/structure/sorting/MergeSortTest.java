@@ -4,7 +4,7 @@ import com.data.structure.UtilTest;
 import com.data.structure.general.Element;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MergeSortTest {
     private static final int SIZE_ARRAY = 10;

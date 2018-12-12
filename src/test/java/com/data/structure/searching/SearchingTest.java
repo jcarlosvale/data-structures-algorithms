@@ -2,7 +2,6 @@ package com.data.structure.searching;
 
 import com.data.structure.UtilTest;
 import com.data.structure.general.Element;
-import com.data.structure.sorting.BasicSorting;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
